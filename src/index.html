@@ -1,31 +1,789 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- custom css -->
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="./input.css">
+    <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- remix icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- flowbite -->
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
-    <title>Document</title>
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!--animate css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./loader.css">
+    <link href="./img/logo.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <title>Beaconsfield Elite Academy</title>
 </head>
+
 <body>
-   <main>
-        
+    <div class="loader">
+        <div id="loader" class="centers">
+            <div class="rings"></div>
+            <span class="font-arima">Beaconsfield <br> Elite <br> Academy</span>
+         
+        </div>
+    </div>
+   
+    <main class="main">
+        <!-- contact information bar -->
+        <div class="bg-white w-[80%] mx-auto contactbar  ">
+            <div class="semiMd:flex justify-between items-center py-[6px]">
+                <div class=" flex justify-center space-x-4 headerIcon">
+                    <!-- social media -->
+                    <a href="https://web.facebook.com/people/Beaconsfield-Elite-Academy/100063858862411/"><i class="ri-facebook-fill text-base"></i></a>
+                    <a href="#"><i class="ri-twitter-fill text-base"></i></a>
+                    <a href="#"><i class="ri-whatsapp-line text-base "></i></a>
+                    <a href="https://www.instagram.com/bea_education/?hl=en"><i class="ri-instagram-line text-base"></i></a>
+                </div>
+                <!-- contact info -->
+                <div>
+                    <div
+                        class=" text-center block sm:flex justify-center semiMd:justify-between text-xs font-semibold  space-x-4 headerContact">
+                        <a href="tel:+23490164527883" class="cursor-pointer">CALL: <span>+23490164527883</span></a>
+                        <a href="#" class="cursor-pointer">EMAIL: <span>info@beaconsfieldeliteacademy.com</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- nav section -->
+        <section>
+            <div class="banner">
+                <div class=" banner-slider  swiper">
+                    <nav id="nav" class="z-[99999] ">
+                        <!-- MOBILE SCREENS -->
+                        <div class="mobile">
+                            <div class="relative z-[999] bg-navBlue largenav ">
+                                <div class="flex justify-between items-center w-[80%] mx-auto">
+                                    <!-- logo -->
+                                    <div>
+                                        <a href="./index.html" class="cursor-pointer">
+                                            <img src="./img/logo.png" alt="logo" class=" mainlogo logo">
+                                        </a>
+                                    </div>
+                                    <!-- menu icon -->
+                                    <div>
+                                        <button id="menuicon" class="menuicon">
+                                            <i class="ri-menu-fill"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- menu items -->
+                                <div id="menuitems" class="hidden ">
+                                    <div class="flex justify-center items-center my-[30px]">
+                                        <ul
+                                            class="text-center font-arima text-gray-300 font-medium text-base space-y-7">
+                                            <li><a href="./index.html" class="text-redMain">Home</a></li>
+                                            <li><a href="./about.html">About Us</a></li>
+                                            <li><a href="./admission.html">Admission Enquiry</a></li>
+                                            <li><a href="./about.html">Gallery</a></li>
+                                            <li><a href="#"></a>FAQ</li>
+                                            <li><a href="#"></a>Portal</li>
+                                        </ul>
+
+                                    </div>
+                                    <!-- social media -->
+                                    <div class="flex justify-center space-x-5 items-center mobileicon pb-[20px]">
+                                        <a href="https://web.facebook.com/people/Beaconsfield-Elite-Academy/100063858862411/" class="facebook flex justify-center"><i
+                                                class="ri-facebook-fill"></i></a>
+                                        <a href="#" class="twitter flex justify-center"><i
+                                                class="ri-twitter-fill"></i></a>
+                                        <a href="#" class="whatsapp flex justify-center"><i
+                                                class="ri-whatsapp-line "></i></a>
+                                        <a href="https://www.instagram.com/bea_education/?hl=en" class="insta flex justify-center"><i
+                                                class="ri-instagram-line"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- LARGE SCREENS -->
+                        <div class="large">
+                            <div class="relative z-[999] largenav ">
+                                <div class="grid grid-cols-4">
+                                    <!-- logo -->
+                                    <div id="logo" class=" w-full col-span-2 flex justify-start items-center px-[20%]">
+                                        <a href="./index.html" class="cursor-pointer">
+                                            <img src="./img/logo.png" alt="logo" class="mainlogo logo">
+                                        </a>
+                                    </div>
+                                    <div class="col-span-2 bg-bluetrans ml-[-100px]">
+                                        <!-- menu items -->
+                                        <div class="flex justify-center items-center h-full">
+                                            <ul
+                                                class="flex space-x-10 text-gray-200 tracking-[0.5px] font-arima  text-base font-extrabold ">
+                                                <li class="home"><a href="./index.html" class="text-redMain">BEA </a></li>
+                                                <li class="aboutus">
+                                                        <button id="aboutus" class="flex justify-between items-center  w-full whitespace-nowrap">About
+                                                            Us <svg class="ml-1 w-4 h-4" aria-hidden="true"
+                                                                fill="currentColor" viewBox="0 0 20 20"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                                                    clip-rule="evenodd"></path>
+                                                            </svg></button>
+                                                        <!-- Dropdown menu -->
+                                                        <div id="aboutusdropdown" class="  absolute show  z-[9999]  w-48 bg-white rounded-sm  shadowItem border-b-[5px] border-b-redMain">
+                                                            <div class="flex justify-center items-center">
+                                                                <ul class="py-1 text-sm font-normal text-gray-600 z-99 " >
+                                                                    <li><a href="./about.html" class="block py-3 px-4 hover:text-red hover:translate-x-5 duration-500 hover:text-redMain ">About Us</a></li>
+                                                                    <li>
+                                                                        <a href="./admission.html"
+                                                                            class="block py-3 px-4 hover:text-blue hover:translate-x-5 duration-500 hover:text-redMain ">
+                                                                            Admission Enquiry</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    
+                                                </li>
+                                                <li class="gallery"><a href="./gallery.html" class="">Gallery</a></li>
+                                                <li class="faq"><a href="#" class="">FAQ</a></li>
+                                                <li class="contact"><a href="#" id="contactus">
+                                                        <button
+                                                            class="flex justify-between items-center  w-full whitespace-nowrap">Contact
+                                                            Us <svg class="ml-1 w-4 h-4" aria-hidden="true"
+                                                                fill="currentColor" viewBox="0 0 20 20"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                                                    clip-rule="evenodd"></path>
+                                                            </svg></button>
+                                                        <!-- Dropdown menu -->
+                                                        <div id="contactusdropdown"
+                                                            class=" absolute show z-[9999] w-36 bg-white rounded-sm  shadowItem border-b-[5px] border-b-redMain">
+                                                            <div class="flex justify-center items-center">
+                                                                <ul class="py-1 text-sm font-normal text-gray-600 z-99 "
+                                                                    aria-labelledby="dropdownNavbarButton1">
+                                                                    <li>
+                                                                        <a href="tel:+23490164527883"
+                                                                            class="flex items-center py-3 px-4 hover:text-red hover:translate-x-5 duration-500 hover:text-redMain "><i
+                                                                                class="ri-phone-line pr-1"></i>Call
+                                                                            Us</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#"
+                                                                            class="flex items-center py-3 px-4 hover:text-blue hover:translate-x-5 duration-500 hover:text-redMain "><i
+                                                                                class="ri-mail-send-line pr-1"></i>
+                                                                            Email Us</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#"
+                                                                            class="flex items-center py-3 px-4 hover:text-blue hover:translate-x-5 duration-500 hover:text-redMain "><i
+                                                                                class="ri-whatsapp-line pr-1 "></i>
+                                                                            Whatsapp</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </a></li>
+                                                <li class="portal"><a href="#" class="">Portal</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <!-- Additional required wrapper -->
+                    <div class="parallax-bg h-full"> </div>
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <!-- SLIDE 1 -->
+                        <div class="swiper-slide banner-item slide-one">
+                            <div class="banner-overlay"></div>
+                            <div class="container absolute top-[30%] ">
+                                <div class="flex justify-start items-center relative ">
+                                    <div class="banner-content bgbanner space-y-5 px-2 ">
+                                        <h3
+                                            class="pt-[50px] text-xl textshadow text-gray-300 font-arima tracking-[0.5px] md:tracking-[1px] text-left">
+                                            We Bring Up Super Students! </h3>
+                                        <h2
+                                            class="text-5xl textshadow font-arima font-normal tracking-[1px] md:tracking-[2px] text-left text-redMain sm:text-gray-300">
+                                            Beaconsfield Elite Academy</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SLIDE 2-->
+                        <div class="swiper-slide banner-item slide-two">
+                            <div class="banner-overlay"></div>
+                            <div class="container absolute top-[30%]  items-center flex justify-end">
+                                <div class="flex justify-start items-center">
+                                    <div class="banner-content bgbanner1 space-y-5 px-2">
+                                        <h3
+                                            class="text-xl textshadow text-gray-300 font-arima tracking-[0.5px] md:tracking-[1px] text-left">
+                                            We Are The Best </h3>
+                                        <h2
+                                            class="text-5xl textshadow font-arima font-normal tracking-[1px] md:tracking-[2px] text-left text-gray-300">
+                                            Nuturing the <br> <span class="text-redMain sm:text-gray-300">Most Awesome
+                                                Minds</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SLIDE 3 -->
+                        <div class="swiper-slide banner-item slide-three">
+                            <div class="banner-overlay"></div>
+                            <div class="container absolute top-[30%]">
+                                <div class="flex justify-start items-center">
+                                    <div class="banner-content bgbanner2 space-y-5 px-2">
+                                        <h3
+                                            class="text-xl textshadow text-gray-300 font-arima tracking-[0.5px] md:tracking-[1px] text-left">
+                                            Best for Education </h3>
+                                        <h2
+                                            class="text-5xl textshadow font-arima font-normal tracking-[1px] md:tracking-[2px] text-left text-gray-300">
+                                            Welcome to <br> <span class="text-redMain sm:text-gray-300">Beaconsfield
+                                                Elite Academy</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+        </section>
+        <!-- about section -->
+        <section class="md:h-[70vh] w-[80%] mx-auto mt-[120px]  ">
+            <!-- ABOUT SCHOOL INTRO -->
+            <div class="mx-auto flex justify-center items-center">
+                <div class="grid grid-rows-1  md:grid-cols-2 gap-y-[50px] md:gap-y-0 gap-x-[75px]">
+                    <div>
+                        <div
+                            class="tracking-[0.2px] block justify-center revealleft space-y-4 font-arima text-graymain font-extrabold text-lg    ">
+                            <p>
+                                Welcome to Beaconsfield Elite Academy which works with the complete child. Our aim is that every child that comes through the door is not only treated as special but feels special.
+                            </p>
+                            <p>
+                                Our individual child centered approach encourages our children to excel in all areas (Academically, socially, physically and emotionally). Our experienced and dedicated teachers consistently set targets for every child with structured programme delivering the perfect mixture of care and learning helps your child to reach their fullest potentials. 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div
+                            class=" block mx-auto justify-center reveal text-base text-gray-600 font-normal space-y-4 ">
+                            <p>At Beaconsfield Elite Academy we believe that our curriculum should be broad, balanced and relevant and meet the needs of all children whatever their ability. The taught curriculum is comprised of The National Curriculum and the wider curriculum and meets statutory requirements.</p>
+                            <p>We ensure the children have a range of learning experiences that challenge, stimulate and promote thinking and learning through our creative curriculum which is based on first-hand experience. This encompasses all foundation subjects and enables us to provide a high standard of teaching and learning.</p>
+                            <p>BEA is already equipped with a standard/functional ICT base and science laboratory, well planned/spacious classrooms with computers and projectors installed in each, sickbay, a library, play ground and a wide range of educational resources. All these are run by a team of experienced and dedicated staff who work under the auspices of experts in the field of education.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class=" mt-[60px] academicsbg mb-10 pb-16 md:mb-14 md:mt-16">
+
+            <div class="flex justify-center mx-auto items-center pt-[120px]">
+                <div class=" revealleft ">
+                    <h1 class="text-4xl font-semibold font-arima text-gray-300">
+                        Academics</span>
+                    </h1>
+                </div>
+            </div>
+            <div class=" mt-14  flex mx-auto justify-center">
+                <!-- SCHOOL SECTIONS  -->
+                <div class="grid grid-rows-4 gap-y-10 semiMd:grid-cols-2 semiMd:grid-rows-2 semiMd:gap-x-[100px] ">
+
+                    <div
+                        class="w-[295px] shadow-2xl md:w-[350px] h-auto revealright bg-[#8dc63f] mx-auto rounded-lg border-0 ">
+                        <div href="#">
+                            <img class="rounded-t-lg" src="./img/beasecondary.jpg" alt="BEA secondary school" />
+                        </div>
+                        <div class="p-5 block space-y-5 md:flex md:justify-between md:items-center ">
+                            <div>
+                                <h5 class="mb-2 font-arima text-2xl font-bold tracking-tight text-white">
+                                    Secondary <br> School
+                                </h5>
+                            </div>
+                            <a href="./admission.html"
+                                class="inline-flex items-center py-2 px-3 text-sm font-quicksand font-medium text-center text-[#8dc63f] bg-white rounded-lg hover:bg-gray-200 ">
+                                Read more
+                                <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div
+                        class="w-[295px] shadow-2xl md:w-[350px] h-auto revealleft bg-[#6797c7] mx-auto rounded-lg border-md">
+                        <div>
+                            <img class="rounded-t-lg " src="./img/beaprimary2.jpg" alt="juniorsecondary" />
+                        </div>
+                        <div class="p-5 block space-y-5 md:flex md:justify-between ">
+                            <div>
+                                <h5 class="mb-2 font-arima text-2xl font-bold tracking-tight text-white">
+                                    Primary 3-6
+                                </h5>
+                            </div>
+                            <a href="./admission.html"
+                                class="inline-flex items-center py-2 px-3 text-sm font-quicksand font-medium text-center text-[#6797c7] bg-white rounded-lg hover:bg-gray-200 ">
+                                Read more
+                                <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div
+                        class="w-[295px] shadow-2xl md:w-[350px]  h-auto revealleft bg-[#ffc000] mx-auto rounded-lg border-0 ">
+                        <div>
+                            <img class="rounded-t- lg" src="./img/beaprimary.jpg" alt="primaryschool" />
+                        </div>
+                        <div class="p-5 block space-y-5 md:flex md:justify-between ">
+                            <div>
+                                <h5 class="mb-2 font-arima text-2xl font-bold tracking-tight text-white">
+                                    Primary 1-3
+                                </h5>
+                            </div>
+                            <a href="./admission.html"
+                                class="inline-flex items-center py-2 px-3 text-sm font-quicksand font-medium text-center text-[#ffc000] bg-white rounded-lg hover:bg-gray-200 ">
+                                Read more
+                                <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div
+                        class="w-[295px] shadow-2xl md:w-[350px]  reveal  h-auto bg-[#ec005c] mx-auto rounded-lg border-0 ">
+                        <div>
+                            <img class="rounded-t-lg " src="./img/beaearlyyears.jpg" alt="earlyyears" />
+                        </div>
+                        <div class="p-5 block space-y-5 md:flex md:justify-between ">
+                            <div>
+                                <h5 class="mb-2 font-arima text-2xl font-bold tracking-tight text-white">
+                                    Early Years
+                                </h5>
+                            </div>
+                            <a href="./admission.html"
+                                class="inline-flex items-center py-2 px-3 text-sm  font-quicksand font-medium text-center text-[#ec005c] bg-white rounded-lg hover:bg-gray-200 ">
+                                Read more
+                                <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="flex justify-center items-center mx-auto pt-[60px] reveal ">
+                <h1 class="font-arima text-4xl text-redMain  font-semibold text-center">Gallery</h1>
+            </div>
+            <div class="mt-16 flex justify-center items-center w-[80%] mx-auto">
+                <div class=" grid gap-y-[40px] sm:gap-y-0  semiMd:grid-cols-3 semiMd:grid-rows-2 semiMd:gap-[50px]">
+                    <div>
+                        <div class="gallery-item galleryimg border-2 border-gray-200 p-[20px] relative">
+                            <img src="./img/beaprimary.jpg" class="gallery-item-img" alt="">
+                            <div
+                                class="imagezoom absolute iconup left-[50%] bg-redMain w-[45px] h-[45px] flex justify-center items-center rounded-full translate-x-[-50%] translate-y-[-50%]">
+                                <i class="ri-search-2-line cursor-pointer"></i>
+                            </div>
+                            <!-- The Modal -->
+                            <div id="myModal" class="modal">
+
+                                <!-- The Close Button -->
+                                <span class="close">&times;</span>
+
+                                <!-- Modal Content (The Image) -->
+                                <img class="modal-content" id="img01">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="gallery-item galleryimg border-2 border-gray-200 p-[20px] relative">
+                            <img src="./img/beasecondary.jpg" class="gallery-item-img" alt="">
+                            <div
+                                class="imagezoom absolute iconup left-[50%] bg-redMain w-[45px] h-[45px] flex justify-center items-center rounded-full translate-x-[-50%] translate-y-[-50%]">
+                                <i class="ri-search-2-line"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="gallery-item galleryimg border-2 border-gray-200 p-[20px] relative">
+                            <img src="./img/beaprimary.jpg" class="gallery-item-img" alt="">
+                            <div
+                                class="imagezoom absolute iconup left-[50%] bg-redMain w-[45px] h-[45px] flex justify-center items-center rounded-full translate-x-[-50%] translate-y-[-50%]">
+                                <i class="ri-search-2-line"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="gallery-item galleryimg border-2 border-gray-200 p-[20px] relative">
+                            <img src="./img/beaprimary.jpg" class="gallery-item-img" alt="">
+                            <div
+                                class="imagezoom absolute iconup left-[50%] bg-redMain w-[45px] h-[45px] flex justify-center items-center rounded-full translate-x-[-50%] translate-y-[-50%]">
+                                <i class="ri-search-2-line"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="gallery-item galleryimg border-2 border-gray-200 p-[20px] relative">
+                            <img src="./img/beaprimary.jpg" class="gallery-item-img" alt="">
+                            <div
+                                class="imagezoom absolute iconup left-[50%] bg-redMain w-[45px] h-[45px] flex justify-center items-center rounded-full translate-x-[-50%] translate-y-[-50%]">
+                                <i class="ri-search-2-line"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="gallery-item galleryimg border-2 border-gray-200 p-[20px] relative">
+                            <img src="./img/beaprimary.jpg" class="gallery-item-img" alt="">
+                            <div
+                                class="imagezoom absolute iconup left-[50%] bg-redMain w-[45px] h-[45px] flex justify-center items-center rounded-full translate-x-[-50%] translate-y-[-50%]">
+                                <i class="ri-search-2-line"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="flex justify-center items-center mt-10">
+                <a href="./gallery.html"
+                    class="bg-blueMain px-5 py-2.5 text-base font-medium text-white rounded-sm hover:bg-opacity-70">VIEW
+                    MORE</a>
+            </div>
+        </section>
+        <section class="mt-[70px] animr">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3938.3502632361015!2d7.399127299836265!3d9.212933288586528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104ddd736f1c2673%3A0x48730e4b00078f1f!2sBeaconsfieldeliteacademy!5e0!3m2!1sen!2sng!4v1664713551635!5m2!1sen!2sng"
+                width="100%" height="200px" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section>
+            <div class="flex justify-center items-center mx-auto pt-[110px] revealleft ">
+                <h1 class="font-arima text-4xl text-redMain  font-semibold text-center">What Our Parents Say</h1>
+            </div>
+            <div class="center w-[80%] mx-auto mt-16">
+                <div class="grid grid-rows-1 md:gap-x-[50px] md:grid-cols-3">
+                    <figure class="snip1192 revealright">
+                        <blockquote>Beaconsfield Elite Academy is a great school to learn and to become a better student
+                            and person. The curriculum here is very precise and challenging. </blockquote>
+                        <div class="author">
+                            <img src="./img/R.webp" alt="sq-sample1" />
+                            <h5>Mrs. Kunmi </h5>
+                        </div>
+                    </figure>
+                    <figure class="snip1192 revealright hover">
+                        <blockquote>The teachers are very reasonable and fair. The staff is excellent and the rules help
+                            keep the school safe and in order. There is an equal balance of learning and reviewing
+                            information so that everyone gets what is to be done and there is tutoring if we need it.
+                        </blockquote>
+                        <div class="author">
+                            <img src="./img/R.webp" alt="sq-sample24" />
+                            <h5>Mr Adewale .O</h5>
+                        </div>
+                    </figure>
+                    <figure class="snip1192 revealright">
+                        <blockquote>The teachers here are super about encouraging students to do their very best.
+                        </blockquote>
+                        <div class="author">
+                            <img src="./img/R.webp" alt="sq-sample29" />
+                            <h5>Mr Gana .A</h5>
+                        </div>
+                    </figure>
+                </div>
+
+            </div>
+        </section>
+        <section class="contactbg">
+            <section class="flex justify-center items-center w-[80%] mx-auto mt-[100px] py-[60px]">
+                <div class="grid grid-rows-1 md:grid-cols-2 gap-y-[50px] md:gap-y-0">
+                    <div>
+                        <div class="flex justify-center items-center">
+                            <ul class="space-y-10 revealleft block ">
+                                <li class=" text-base flex font-normal  ">
+                                    <?xml version="1.0" ?>
+                                    <!DOCTYPE svg
+                                        PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                    <svg enable-background="new 0 0 48 48" fill="#1a1a37" height="28px" width="28px"
+                                        id="Layer_1" version="1.1" viewBox="0 0 48 48" xml:space="preserve"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <path clip-rule="evenodd"
+                                            d="M24,47c0,0-18-9.417-18-28C6,9.059,14.059,1,24,1s18,8.059,18,18  C42,37.583,24,47,24,47z M24,3C15.178,3,8,10.178,8,19c0,14.758,12.462,23.501,16.003,25.687C27.547,42.51,40,33.805,40,19  C40,10.178,32.822,3,24,3z M24,28c-4.971,0-9-4.029-9-9s4.029-9,9-9s9,4.029,9,9S28.971,28,24,28z M24,12c-3.866,0-7,3.134-7,7  s3.134,7,7,7s7-3.134,7-7S27.866,12,24,12z"
+                                            fill-rule="evenodd" />
+                                    </svg>
+                                    <div class="">
+                                        <h4 class="font-arima text-navBlue font-bold text-xl tracking-[0.5px] pl-4">Our
+                                            Location</h4>
+                                        <p class="font-quicksand text-white">Beaconsfield Elite Academy <br>Plot C86, Ushafa Village Expansion Scheme, <br>Old Bwari Road,<br>Abuja-FCT</p>
+                                    </div>
+                                </li>
+                                <li class=" text-base flex font-normal ">
+                                    <?xml version="1.0" ?>
+                                    <!DOCTYPE svg
+                                        PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                    <svg enable-background="new 0 0 50 50" height="28px" width="28px" id="Layer_1"
+                                        version="1.1" viewBox="0 0 50 50" xml:space="preserve"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <rect fill="none" height="50" width="50" />
+                                        <path
+                                            d="M30.217,35.252c0,0,4.049-2.318,5.109-2.875  c1.057-0.559,2.152-0.7,2.817-0.294c1.007,0.616,9.463,6.241,10.175,6.739c0.712,0.499,1.055,1.924,0.076,3.32  c-0.975,1.396-5.473,6.916-7.379,6.857c-1.909-0.062-9.846-0.236-24.813-15.207C1.238,18.826,1.061,10.887,1,8.978  C0.939,7.07,6.459,2.571,7.855,1.595c1.398-0.975,2.825-0.608,3.321,0.078c0.564,0.781,6.124,9.21,6.736,10.176  c0.419,0.66,0.265,1.761-0.294,2.819c-0.556,1.06-2.874,5.109-2.874,5.109s1.634,2.787,7.16,8.312  C27.431,33.615,30.217,35.252,30.217,35.252z"
+                                            stroke="#1a1a37" fill="none" stroke-miterlimit="10" stroke-width="2" />
+                                    </svg>
+                                    <div class="">
+                                        <h4 class="font-arima text-navBlue font-bold text-xl tracking-[0.5px] pl-6">
+                                            Phone Numbers</h4>
+                                        <a href="tel:+23490164527883"
+                                            class="hover:underline  text-white">+23490164527883</a> <br>
+                                        <a href="tel:+2348144445762"
+                                            class="hover:underline  text-white">+2348144445762</a><br>
+                                    </div>
+                                </li>
+                                <li class=" text-base flex font-normal">
+                                    <?xml version="1.0" ?><svg height="28px" fill="#1a1a37" width="28px"
+                                        viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                        <title />
+                                        <g data-name="8-Email" id="_8-Email">
+                                            <path
+                                                d="M45,7H3a3,3,0,0,0-3,3V38a3,3,0,0,0,3,3H45a3,3,0,0,0,3-3V10A3,3,0,0,0,45,7Zm-.64,2L24,24.74,3.64,9ZM2,37.59V10.26L17.41,22.17ZM3.41,39,19,23.41l4.38,3.39a1,1,0,0,0,1.22,0L29,23.41,44.59,39ZM46,37.59,30.59,22.17,46,10.26Z" />
+                                        </g>
+                                    </svg>
+                                    <div class="">
+                                        <h4 class="font-arima text-navBlue font-bold text-xl tracking-[0.5px] pl-4">
+                                            Email Address</h4>
+                                        <p class="font-quicksand  text-white">loremiternational<br>schools@gmail.com</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="revealleft text-center md:max-w-xl lg:max-w-3xl mx-auto revealleft lg:py-10 ">
+                            <h3 class="text-2xl font-bold font-arima pb-14 tracking-[1px] text-navBlue ">Leave Us a
+                                Message</h3>
+                        </div>
+                        <form class="revealleft">
+                            <div class="relative z-0 mb-6  md:w-[583px] md:max-w-full group">
+                                <input type="email" name="email" id="email"
+                                    class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white appearance-none  focus:outline-none focus:ring-0 peer"
+                                    placeholder=" " required="">
+                                <label for="email"
+                                    class="peer-focus:font-medium absolute text-sm text-navBlue font-medium  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email
+                                    address</label>
+                            </div>
+
+                            <div class="grid md:grid-cols-2 md:gap-0">
+                                <div class="relative z-0 mb-6  md:w-[250px] md:max-w-full group">
+                                    <input type="tel" name="Phone" id="phone"
+                                        class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white appearance-none  focus:outline-none focus:ring-0 peer"
+                                        placeholder=" " required="">
+                                    <label for="phone"
+                                        class="peer-focus:font-medium absolute text-sm text-navBlue font-medium  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone</label>
+                                </div>
+                                <div class="relative z-0 mb-6  md:w-[250px] md:max-w-full group">
+                                    <input type="text" name="name" id="floating_last_name"
+                                        class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white appearance-none  focus:outline-none focus:ring-0 peer"
+                                        placeholder=" " required="">
+                                    <label for="name"
+                                        class="peer-focus:font-medium absolute text-sm text-navBlue font-medium  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Name</label>
+                                </div>
+                            </div>
+                            <div class="relative z-0 mb-6 w-full md:w-[583px] max-w-full group">
+                                <input type="text" name="message" id="message"
+                                    class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white appearance-none  focus:outline-none focus:ring-0 peer"
+                                    placeholder=" " required="">
+                                <label for="message"
+                                    class="peer-focus:font-medium absolute text-sm text-navBlue font-medium  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Message</label>
+                            </div>
 
 
+                            <button
+                                class="bg-redMain px-4 py-2 text-base font-medium text-white rounded-md hover:bg-opacity-70">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!-- FOOTER -->
+        <footer class="p-4 bg-gray-800 fancy-border sm:p-6 font-poppins">
+            <div class="md:flex md:justify-between">
+                <div class="mb-6 md:mb-0">
+                    <a href="./index.html" class="flex items-center revealleft">
 
-   </main>
+                        <span
+                            class="self-center font-arima text-2xl tracking-[1px] font-semibold whitespace-nowrap text-white">Beaconsfield
+                            Elite <br>
+                            Academy</span>
+                    </a>
+                </div>
+                <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 revealleft">
+                    <div>
+                        <h2 class="mb-6 text-sm font-arima font-semibold text-gray-400 uppercase dark:text-white">Quick
+                            <span class="text-redMain">Links</span>
+                        </h2>
+                        <ul class="text-gray-400 font-quicksand ">
+                            <li class="mb-1">
+                                <a href="./index.html" class="hover:underline text-xs">HOME</a>
+                            </li>
+                            <li class="mb-1">
+                                <a href="./about.html" class="hover:underline text-xs">ABOUT US</a>
+                            </li>
+                            <li class="mb-1">
+                                <a href="./admission.html" class="hover:underline text-xs">ADMISSION ENQUIRY</a>
+                            </li>
+                            <li class="mb-1">
+                                <a href="./gallery.html" class="hover:underline text-xs">GALLERY</a>
+                            </li>
+                            <li class="mb-1">
+                                <a href="./faq.html" class="hover:underline text-xs">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-sm font-arima font-semibold text-gray-400 uppercase ">Cont<span
+                                class="text-redMain">act</spann>
+                        </h2>
+                        <ul class="text-gray-400 space-y-2">
+                            <li class="mb-2">
+                                <a href="https://goo.gl/maps/i5JwbPrmgxCrRNk37" class="hover:underline  "><span class="text-redMain text-sm">Beaconsfield Elite
+                                        Academy </span><br>Plot C86, <br> Ushafa Village Expansion Scheme, <br>Old Bwari Road,<br>Abuja-FCT.
+                            </li>
+                            <li>
+                                <a href="tel:+23490164527883" class="hover:underline ">+23490164527883</a> <br>
+                            </li>
+                            <li>
+                                <a href="tel:+2348144445762" class="hover:underline">+2348144445762</a><br>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-redMain text-sm font-arima font-semibold">ADMISSION</h2>
+                        <ul class="text-gray-400 text-xs space-y-2 font-quicksand uppercase">
+                            <li class="hover:underline">
+                                <a href="./admission.html">Early Years</a>
+                            </li>
+                            <li class="hover:underline">
+                                <a href="./admission.html">Primary</a>
+                            </li>
+                            <li class="hover:underline">
+                                <a href="./admission.html">Junior Secondary</a>
+                            </li>
+                            <li class="hover:underline">
+                                <a href="./admission.html">Senior Secondary</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8">
+            <div class="sm:flex sm:items-center sm:justify-between ">
+                <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="./index.html"
+                        class="hover:underline">Beaconsfield Elite Academy </a>. All Rights Reserved. || <a
+                        href="https://portfolio-kevinchikaikechukwu.netlify.app/" class="hover:underline"
+                        target="_blank">Kevin-Chika Ikechukwu</a>
+                </span>
+                <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+                    <ul class="wrapper">
+                        <li class="icon facebook">
+                            <span class="tooltip">Facebook</span>
+                            <a href="https://web.facebook.com/people/Beaconsfield-Elite-Academy/100063858862411/"><i
+                                    class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li class="icon twitter">
+                            <span class="tooltip">Twitter</span>
+                            <a><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li class="icon instagram">
+                            <span class="tooltip">Instagram</span>
+                            <a href="https://www.instagram.com/bea_education/?hl=en"><i
+                                    class="fab fa-instagram"></i></a>
+                        </li>
+                        <li class="icon github">
+                            <span class="tooltip">Whatsapp</span>
+                            <a href="https://wa.me/+2348033154523"><i class="ri-whatsapp-line"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!-- SCROLL TOP -->
+        <a onclick="topFunction()" id="myBtn" title="Go to top" class="page-scroll scroll-top scroll-btn flex justify-center "><?xml version="1.0" ?><svg class="mx-auto pt-1" width="30px" id="Layer_1" fill="#fff" style="enable-background:new 0 0 50 50;" version="1.1" viewBox="0 0 50 50" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Layer_1_1_"><polygon points="25,15.268 47.293,37.56 48.707,36.147 25,12.44 1.293,36.147 2.707,37.56  "/></g></svg></a>
     
 
+    </main>
 
 
 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            speed: 400,
+            // effect: 'fade',
+            parallax: true,
+            spaceBetween: 100,
+            autoplay: {
+                delay: 4000,
+            },
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
 </body>
+
 </html>

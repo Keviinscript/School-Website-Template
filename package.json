@@ -5,12 +5,16 @@
   "main": "index.js",
   "scripts": {
     "build": "npx tailwindcss -i ./src/input.css -o ./src/main.css",
+    "babel": "babel src -d lib",
     "watch": "npx tailwindcss -i ./src/input.css -o ./src/main.css --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.19.3",
+    "@babel/preset-env": "^7.19.3",
     "tailwindcss": "^3.1.8"
   }
 }
