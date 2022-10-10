@@ -60,9 +60,13 @@ height: 95vh;
 .parallax-bg{
   /* background-image:url(./img/hero.JPG); */
   background-image:url(./img/IMG_20220401_083259_292.jpg);
+  -webkit-background-image:url(./img/IMG_20220401_083259_292.jpg);
   background-attachment: fixed;
+  -webkit-background-attachment: fixed;
   background-color:rgba(26, 26, 55, .7);
+  -webkit-background-color:rgba(26, 26, 55, .7);
   background-blend-mode: overlay;
+  -webkit-background-blend-mode: overlay;
 
   /* height: 100vh;  */
   /* Center and scale the image nicely */
@@ -79,6 +83,7 @@ height: 95vh;
   -webkit-background-size:cover;
   background-size: cover;
   background-position: center;
+  -webkit-background-position: center;
 }
 .logo{
     max-width: 100%;
