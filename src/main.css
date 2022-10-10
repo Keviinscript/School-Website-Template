@@ -1594,6 +1594,14 @@ html{
   -webkit-background-position: center;
 }
 
+@media screen and (max-width:500px) {
+  .parallax-bg{
+    background-size: cover;
+    background-position: center;
+    -webkit-background-position: center;
+  }
+}
+
 .logo{
   max-width: 100%;
   height: auto;
