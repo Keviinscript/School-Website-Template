@@ -58,7 +58,8 @@ height: 95vh;
   font-size: 60px;
 }
 .parallax-bg{
-  background-image:url(./img/hero.JPG);
+  /* background-image:url(./img/hero.JPG); */
+  background-image:url(./img/IMG_20220401_083259_292.jpg);
   background-attachment: fixed;
   background-color:rgba(26, 26, 55, .7);
   background-blend-mode: overlay;
@@ -557,7 +558,7 @@ height: 95vh;
 }
 .academicsbg {
   background:linear-gradient(rgba(77, 77, 77, .5),rgba(77, 77, 77, .5)),  
-  url(./img/hero.JPG);
+  url(./img/IMG_20220525_103311_164.jpg);
   background-position: center top;
   background-size: cover;
   background-attachment: fixed;
@@ -877,7 +878,7 @@ figure.snip1192 .author h5 {
 
 
 .aboutusbg{
-  background-image:url(./img/aboutus.JPG);
+  background-image:url(./img/IMG_20220401_083259_292.jpg);
   background-attachment: fixed;
   background-color:rgba(26, 26, 55, .8);
   background-blend-mode: multiply;
@@ -899,7 +900,7 @@ figure.snip1192 .author h5 {
   word-spacing: 2px;
 }
 .aboutsecondbg {
-  background: linear-gradient( rgba(4, 9, 30, 0.7),  rgba(4, 9, 30, 0.7)),  url(./img/ban1.jpg);
+  background: linear-gradient( rgba(4, 9, 30, 0.7),  rgba(4, 9, 30, 0.7)),  url(./img/IMG_20220401_085007_773.jpg);
   /* height: 90vh; */
   background-position: center top;
   background-size: cover;
@@ -910,7 +911,7 @@ figure.snip1192 .author h5 {
 }
 @media screen and (min-width: 1024px) {
   .aboutsecondbg {
-    background: linear-gradient( rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),  url(./img/ban1.jpg);
+    background: linear-gradient( rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),  url(./img/IMG_20220401_085007_773.jpg);
     /* height: 70vh; */
     background-position: center top;
     background-size: cover;
@@ -924,7 +925,7 @@ figure.snip1192 .author h5 {
   background:rgba(255,255,255, 0.55);
 }
 .admissionsecondbg {
-  background: linear-gradient( rgba(4, 9, 30, 0.7),  rgba(4, 9, 30, 0.7)),  url(./img/ban1.jpg);
+  background: linear-gradient( rgba(4, 9, 30, 0.7),  rgba(4, 9, 30, 0.7)),  url(./img/IMG_20220401_085007_773.jpg);
   height: 30vh;
   background-position: center top;
   background-size: cover;
