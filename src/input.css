@@ -59,8 +59,8 @@ height: 95vh;
 }
 .parallax-bg{
   
-  background-image:url(./img/IMG_20220401_083259_292.jpg);
-  -webkit-background-image:url(./img/IMG_20220401_083259_292.jpg);
+  background-image:url(./img/IMG_20220404_082032_161.jpg);
+  -webkit-background-image:url(./img/IMG_20220404_082032_161.jpg);
   background-attachment: fixed;
   -webkit-background-attachment: fixed;
   background-color:rgba(26, 26, 55, .7);
@@ -894,7 +894,7 @@ figure.snip1192 .author h5 {
 
 
 .aboutusbg{
-  background-image:url(./img/IMG_20220401_083259_292.jpg);
+  background-image:url(./img/IMG_20220404_082032_161.jpg);
   background-attachment: fixed;
   background-color:rgba(26, 26, 55, .8);
   background-blend-mode: multiply;
