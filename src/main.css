@@ -1569,8 +1569,8 @@ html{
 }
 
 .parallax-bg{
-  background-image:url(./img/IMG_20220404_082032_161.jpg);
-  -webkit-background-image:url(./img/IMG_20220404_082032_161.jpg);
+  background-image:url(./img/0.jpg);
+  -webkit-background-image:url(./img/0.jpg);
   background-attachment: fixed;
   -webkit-background-attachment: fixed;
   background-color:rgba(26, 26, 55, .7);
@@ -2279,7 +2279,7 @@ html{
 
 .academicsbg {
   background:linear-gradient(rgba(77, 77, 77, .5),rgba(77, 77, 77, .5)),  
-  url(./img/IMG_20220525_103311_164.jpg);
+  url(./img/acdemics.jpg);
   background-position: center top;
   background-size: cover;
   background-attachment: fixed;
@@ -2687,7 +2687,7 @@ figure.snip1192 .author h5 {
 }
 
 .aboutusbg{
-  background-image:url(./img/IMG_20220404_082032_161.jpg);
+  background-image:url(./img/0.jpg);
   background-attachment: fixed;
   background-color:rgba(26, 26, 55, .8);
   background-blend-mode: multiply;
