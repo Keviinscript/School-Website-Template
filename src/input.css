@@ -904,6 +904,28 @@ figure.snip1192 .author h5 {
   background-size: cover;
   background-position: 50% 90%;
 }
+.earlyyearsbg{
+  background-image:url(./img/gallery/IMG_20220401_085720_602.jpg);
+  background-attachment: fixed;
+  background-color:rgba(26, 26, 55, .8);
+  background-blend-mode: multiply;
+  width: 100%;
+  height: 45vh;
+  -webkit-background-size:cover;
+  background-size: cover;
+  background-position: 50% 90%;
+}
+/* .primarybg{
+  background-image:url(./img/gallery/IMG_20220401_085720_602.jpg);
+  background-attachment: fixed;
+  background-color:rgba(26, 26, 55, .8);
+  background-blend-mode: multiply;
+  width: 100%;
+  height: 45vh;
+  -webkit-background-size:cover;
+  background-size: cover;
+  background-position: 50% 90%;
+} */
 .director{
   width: 100%;
   max-width: 355px;
