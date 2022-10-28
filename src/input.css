@@ -78,7 +78,7 @@ height: 95vh;
   background-position: center;
   -webkit-background-position: center;
 }
-@media screen and (max-width:500px) {
+@media only screen and (max-width:500px) {
   .parallax-bg{
     background-image:url(./img/0.jpg);
     -webkit-background-size:cover;
